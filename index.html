@@ -1,0 +1,26 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+      <py-env>
+        - numpy
+        - matplotlib
+      </py-env>
+    </head>
+
+  　<body>
+    　<h1>二次関数図を描こう</h1>
+    　<div id="quad"></div>
+    　<py-script output="quad">
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = x = np.arange(-10, 10, 0.1)
+y = x*x
+
+fig, ax = plt.subplots()
+ax.plot(x, y)
+fig
+    　</py-script>
+  　</body>
+</html>
